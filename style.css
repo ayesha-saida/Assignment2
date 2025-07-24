@@ -93,9 +93,27 @@ nav .right li a {
   width: 100%;
 }
 /*Plants Lover */
-.about-plants {
-  font-size: 25px;
+.plants-lover {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
+.about-plants ul {
+  line-height: 25px;
+}
+.about-plants {
+  padding-top: 10px;
+}
+.about-plants h1 {
+  font-size: 40px;
+  text-align: left;
+  padding-left: 10px;
+}
+#p-lovers {
+  gap: 15px;
+}
+
 /*Mobile device*/
 @media (max-width: 576px) {
   header .content .left {
