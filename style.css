@@ -122,15 +122,52 @@ nav .right li a {
   font-size: 25px;
   font-weight: 700px;
   padding: 50px;
-  background-size: cover;
-  background-position-x: 100%;
 }
 .h1-bunch {
   text-align: center;
 }
+.info-placeholder {
+  display: flex;
+  justify-content: center;
+}
+#join {
+  background-color: #eee;
+  color: #8987a1;
+  border-style: none;
+  padding: 15px 200px 10px 13px;
+}
+#subscribe {
+  background-color: #e95a08;
+  color: #ffffff;
+  border-style: none;
+  padding: 5px 40px;
+}
+
+/*footer*/
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer .f-center li,
+footer .f-center2 li {
+  list-style: none;
+  line-height: 40px;
+}
+footer .f-center li a,
+footer .f-center2 li a {
+  text-decoration: none;
+}
+.f-right {
+  display: flex;
+  gap: 15px;
+  padding-top: 30px;
+}
 /*Mobile device*/
 @media (max-width: 576px) {
   /*navbar*/
+
   header .content .left {
     padding: 0;
   }
@@ -150,15 +187,14 @@ nav .right li a {
   }
   /*banner*/
   .banner {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
-  .banner-photo {
-    order: -1;
-  }
+
   /*plants cart*/
   .plants-card {
     grid-template-columns: repeat(2, 1fr);
   }
+
   /*plants lover*/
   .plants-lover {
     flex-direction: column;
