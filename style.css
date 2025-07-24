@@ -8,17 +8,8 @@ header .content {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 2px solid salmon;
 }
 
-.left {
-  padding-left: 80px;
-  border: 2px solid slateblue;
-}
-.right {
-  padding-right: 80px;
-  border: 2px solid seagreen;
-}
 nav .right li {
   display: inline;
   list-style: none;
@@ -126,6 +117,19 @@ nav .right li a {
 .deals h1 {
   font-size: 30px;
 }
+/*
+.image-div {
+  position: relative;
+  z-index: 5;
+}
+.blank-1 {
+  position: absolute;
+  background-color: #eee;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+*/
 .deal-collage {
   display: flex;
 }
@@ -133,7 +137,7 @@ nav .right li a {
   flex: 1;
 }
 .deal-left img {
-  height: calc((100% - 5px) / 2);
+  /* height: calc((100% - 5px) / 2);*/
   border-radius: 15px;
 }
 
@@ -147,7 +151,6 @@ nav .right li a {
 }
 
 /*join community*/
-
 .community {
   background-image: url(./assets/news-letter-bg.png);
   width: 100%;
@@ -160,6 +163,13 @@ nav .right li a {
 .h1-bunch {
   text-align: center;
 }
+.join-community {
+  padding-top: 30px;
+}
+/*.community-join {
+  display: flex;
+  flex-direction: column;
+} */
 .info-placeholder {
   display: flex;
   justify-content: center;
@@ -199,14 +209,10 @@ footer .f-center2 li a {
   padding-top: 30px;
 }
 /*Mobile device*/
-@media (max-width: 576px) {
+@media (max-width: 567px) {
   /*navbar*/
-
   header .content .left {
     padding: 0;
-  }
-  nav .right ul {
-    padding-left: 0px;
   }
 
   header .content #hidden {
@@ -236,11 +242,37 @@ footer .f-center2 li a {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  .deal-right img {
+    width: 357px;
+    height: 200px;
+  }
+
+  /*join*/
+  .community {
+    width: 700px;
+  }
+  .join-community {
+    padding-top: 50px;
+  }
+  .h1-bunch {
+    font-size: 25px;
+  }
+  #join {
+    padding-right: 15px;
+    font-size: 12px;
+  }
+  #subscribe {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 12px;
+  }
 
   /*footer*/
   footer {
     grid-template-columns: repeat(1, 1fr);
-    padding: 0;
+  }
+  .f-left {
+    padding-left: 15px;
   }
   .f-right {
     padding-left: 10px;
