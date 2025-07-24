@@ -101,7 +101,6 @@ nav .right li a {
 }
 .about-plants {
   padding-top: 30px;
-  border: 2px solid saddlebrown;
 }
 
 .about-plants h1 {
@@ -114,6 +113,21 @@ nav .right li a {
   margin-top: -9px;
 }
 
+/*join community*/
+.community {
+  background-image: url(./assets/news-letter-bg.png);
+  width: 100%;
+  height: 350px;
+  color: white;
+  font-size: 25px;
+  font-weight: 700px;
+  padding: 50px;
+  background-size: cover;
+  background-position-x: 100%;
+}
+.h1-bunch {
+  text-align: center;
+}
 /*Mobile device*/
 @media (max-width: 576px) {
   /*navbar*/
@@ -148,5 +162,9 @@ nav .right li a {
   /*plants lover*/
   .plants-lover {
     flex-direction: column;
+  }
+  .about-plants h1 {
+    font-size: 25px;
+    text-align: left;
   }
 }
